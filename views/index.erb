@@ -1,0 +1,23 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Asked</title>
+</head>
+<body>
+<h1>Asked!</h1>
+  <!-- 액션이 들어오면 /ask화면으로 넘어가겠다는 의미 -->
+<form action = "/ask">
+  <select name = "id">
+    <option value = "anoymous">anonymous</option>
+    <option value = "id">id</option>
+  </select>
+  <!-- placeholder는 값 입력을 도와주는 인터페이스 -->
+  Ask : <input type = "text" name = "question" placeholder="Input your question">
+<input type= "submit">
+</form>
+<!-- each 문이 돌면서 배열의 값 하나하나를 출력 -->
+  <% @list.each do |e| %>
+    <%=e %> <br>
+    <%end%>
+</body>
+</html>
